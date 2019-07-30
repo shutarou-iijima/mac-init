@@ -1,0 +1,37 @@
+{
+    "title": "for me",
+    "rules": [
+        {
+            "description": "ctrl + [ to Escape",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "open_bracket",
+                        "modifiers": {
+                            "mandatory": ["control"]
+                        }
+                    },
+                    "to": [
+		        {
+                            "key_code": "escape"
+                        }
+		    ]
+                }
+	    ]
+        },
+        {
+            "description": "ctrl-M を return に変換",
+            "manipulators": [
+                { "type": "basic",
+                  "from": { "key_code": "m",
+                            "modifiers": { "mandatory": [ "control" ] }
+                          },
+                  "to": [
+                      { "key_code": "return_or_enter" }
+                  ]
+                }
+            ]
+        }
+    ]
+}
